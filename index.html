@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>万和热汤 (Healthpa) - 你的愉悦之地</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="登录,万和,万和热汤,热汤,温泉,温泉旅社,登录,注册">
+	<meta name="description" content="万和热汤，你的愉悦之地|用户登录、注册、App下载">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
+    <link href="bts/bootstrap.css" rel="stylesheet">
+	<link href="res/login.css" rel="stylesheet">
+   </head>
+   <body>
+	<!--第一屏 登陆界面-->
+	<div id="logBg">
+		<div id="nav">
+			<a class="l_logo_a" href="#"><span class="l_logo"></span></a>
+		</div>
+		<h1 class="wmhp">万和热汤</h1>
+		<p id="greetip" class="tpTip">欢迎光临</p>
+		<!--i.e.(5)
+		温泉水滑洗凝脂,
+		微波细浪流琮琤,
+		更邀明月濯涟漪,
+		暖比春温洁比秋,
+		濯濯气靖此，曦发弄潺潺,
+		@https://zhidao.baidu.com/question/308419941.html;
+		end.-->
+		
+		<div id="acntFrm">
+			<ul id="myTab" class="nav nav-tabs">
+				<li class="white">
+					<a href="#signup" data-toggle="tab">注 册</a>
+				</li>
+				<li class="active white">
+					<a href="#signin" data-toggle="tab">登 录</a>
+				</li>
+				<li id="acntFrm_3" class="white">
+					<a href="#dlapp" data-toggle="tab">移动APP</a>
+				</li>				
+			</ul>
+			<div id="acntFrm_bdy">
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade acntForm" id="signup">
+					<!--注册-->	
+						<div class="signF signUp">
+							<div class="signUplft">
+								<form class="bs-example bs-example-form" role="form">
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-user"></span>
+										<input type="text" class="form-control tm1" placeholder="用户名">
+									</div>
+									<div class="plo"></div>
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"> </span>
+										<input type="password" class="form-control tm1" placeholder="密码">
+									</div>
+									<div class="plo"></div>
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"> </span>
+										<input type="text" class="form-control tm1" placeholder="邮箱">
+									</div>
+									<div class="plo"></div>
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"> </span>
+										<input type="text" class="form-control tm1" placeholder="手机号">
+									</div>
+									<div class="plo"></div>
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"> </span>
+										<input type="text" class="form-control tm1" placeholder="验证码">
+									</div>	
+								</form>
+								<div class="logsts">
+									<input type="checkbox"/> 同意<a href="#">《万和热汤用户服务许可》</a>
+								</div>
+								
+								<input type="submit" value="注&nbsp;&nbsp;&nbsp;&nbsp;册" class="sbt"/>
+								
+							</div>
+							<!--右侧 合作快速注册-->
+							<div class="signUprgh">
+							<span class="kszc">使用合作账户注册</span>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade in active acntForm" id="signin">
+					<!--登录-->
+						<div class="signF signIn">
+							<div class="signlft">
+								<form class="bs-example bs-example-form" role="form">
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-user"></span>
+										<input type="text" class="form-control tm1" placeholder="户名 / 邮箱 / 手机">
+									</div>
+									<div class="plo"></div>
+									<div class="input-group">
+										<span class="input-group-addon glyphicon glyphicon-lock"> </span>
+										<input type="password" class="form-control tm1" placeholder="密码">
+									</div>
+									<br>
+									
+									<div id="yzhm">
+										<script type = "text/javascript" src = "res/checkCode.js"></script>
+										<div class="input-group">
+											<span class="input-group-addon glyphicon glyphicon-hand-right"></span>
+											<input type = "text" id = "yzhmipt" class="form-control tm1" placeholder="验证码"/> 
+											<input type = "button" id="yzhcode" onclick="createCode()" value="????"/>
+										</div>				
+											 <script>createCode();</script> 
+											<input type = "button" value = "验证" onclick = "validate()" style="visibility: hidden; float: right;"/> 
+									</div>
+									
+								</form>
+								<div class="nonselect">
+									<span class="cytip">安全稳定，愉悦之选。</span>
+									
+									<input type="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;陆" class="sbt"/>
+									
+									<div class="logsts">
+										<input type="checkbox"/> 记住登陆状态
+									</div>
+									<div class="qap">
+										<span><a href="#">忘记密码</a></span>  |  
+										<span><a href="#">找回账户</a></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="signrit nonselect">
+								快捷登陆<br/>
+								<div class="qlog">
+								<br/>
+									<button type="button" class="btn btn-primary btn-sm snslg snswx">
+									  <span class="glyphicon glyphicon-twitter"></span> 微信登陆
+									</button><br/><br/>
+									<button type="button" class="btn btn-primary btn-sm snslg snswb">
+									  <span class=""></span> 微博登陆
+									</button><br/><br/>
+									<button type="button" class="btn btn-primary btn-sm snslg snswm">
+									  <span class=""></span> 万和会员
+									</button><br/><br/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade acntForm" id="dlapp">
+					<!--移动APP-->
+						<div class="signF">
+							<div id="mapp">
+								<div class="mappl"><br/>
+									<img src="images/qrc.png" width="180px" style="padding: 20px; border: 1px solid #e5e5e5;">
+								</div>
+								<div class="mappr">
+									
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	<div class="clearfix pd100"></div>
+	
+	<script>
+		//随机图文:greetips
+		function randnum(op,ed){
+			return parseInt(Math.random()*(ed-op+1)+op);
+		}
+		var greetip = new Array("温泉水滑洗凝脂","微波细浪流琮琤","更邀明月濯涟漪","暖比春温洁比秋","濯濯气靖此，曦发弄潺潺");
+		document.getElementById("greetip").innerHTML = greetip[randnum(1,5)-1];
+		//背景图切换
+		var cnt = 0;
+		
+		</script>
+	</div>	
+	<!--副屏开启-->
+	<div id="pgs" class="nonselect">
+	<!--第二屏-->
+		<div id="pg2">
+			<h2>沉浸在自然之中</h2><br/>
+			<p>置身自然之景，感受水之清冽，泉之惊泓</p>
+			<div id="pg2bg"></div>
+			<div id="pg2t">
+				<div class="pg2tl">
+					<img src="./images/bg/wq.jpg" alt="原生态温泉">
+					<h2>原生态温泉</h2><br/>
+					<p class="smp">直取自然温泉，借天工之巧，造百分之享受</p>
+				</div>
+				<div class="pg2tr">
+					<img src="./images/bg/places.jpg" alt="沉浸在山林中">
+					<h2>迷失在山野中</h2><br/>
+					<p class="smp">享受一整晚的宁静，在静谧的山林中，感受自然的温度</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+	<!--第三屏-->
+		<div id="pg3">
+			<h2>发现温泉的乐趣</h2><br/>
+			<p>万和热汤，不仅仅是温泉，热汤还提供了营养温泉，美味餐饮和特色民居，在不同的店面，相关服务也会有所不同，因此每一家热汤都能给你留有不同的感受。热汤的乐趣，不止在温泉。</p>
+			<img src="./images/bg/index_pg3.png" width="90%" alt="everywhere & anytime">
+		</div>
+		
+		<!--第四屏-->
+		<div id="pg4">
+			<h2>四方美食 · 特色民宿</h2><br/>
+			<p>遍布全国的热汤店铺，为您呈上当地的珍馐美食与特色民宿，感受温泉滋养的同时，还能一饱口福，享美景与美食，岂不乐哉。</p>
+			<img src="./images/bg/pg4.png" width="100%" alt="珍馐美食 · 特色民宿">
+		</div>
+		
+		<!--第五屏-->
+		<div id="pg5">
+			<h2>优质的客户服务</h2><br/>
+			<!-- <p>支持中文、英语、日语等多国语言，为您提供7x24小时全天候优质服务。</p> -->
+			<img src="./images/bg/kefu.png" width="100%" alt="支持中文、英语、日语等多国语言，为您提供7x24小时全天候优质服务。">
+		</div>
+
+	<!--尾屏-->
+		<div id="lastp">
+			<h2>万和热汤 - 你的愉悦之地</h2><br/>
+			<h3>立即前往，探寻究竟</h3><br/>
+			<button><span>即刻注册</span></button>
+		</div> 
+		
+	</div>
+	<!--footer-->
+	<div id="footer" class="nonselect">
+		<ul>
+		<li><a href="#">关于热汤</a></li>|
+		<li><a href="#">工作机会</a></li>|
+		<li><a href="#">商务合作</a></li>|
+		<li><a href="#">特色介绍</a></li>|
+		<li><a href="#">官方博客</a></li>
+		</ul>
+		<p>&copy;2012-2018 &nbsp;万和公司版权所有 &nbsp;&nbsp;&nbsp;  万和热汤，你的愉悦之地 &nbsp;&nbsp;&nbsp; &copy;2018 Wonmihe Healthpa &nbsp;&nbsp;&nbsp; All Rights Reserved.</p>
+	</div>
+	<!--屏幕自适应-->
+	<script>
+	
+	</script>
+    <!-- Bootstarp -->
+    <script src="bts/jquery.js"></script>
+    <script src="bts/bootstrap.js"></script>
+   </body>
+</html>
